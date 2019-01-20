@@ -1,22 +1,30 @@
 
 참고 사이트 : https://www.appcoda.com/cocoapods/
-cocoapods 사용법
+
+< cocoapods 사용법 >
 
 1. CocoaPods란?
-CocoaPods is a dependency manager for Swift and Objective-C projects.
-개발자를위한 일련의 프레임 워크와 패키지를 관리하는 도구입니다. 그래서 드롭과 드롭을 통해 수동으로 파일을 가져 오는 대신 CocoaPods와 같은 의존성 관리자가 모든 것을 처리합니다.
-자동으로 프레임 워크를 찾거나 설치하거나 종속성에 따라 전체 프로세스를 단순화합니다.
+  CocoaPods is a dependency manager for Swift and Objective-C projects.
+  개발자를위한 일련의 프레임 워크와 패키지를 관리하는 도구입니다. 
+  그래서 드롭과 드롭을 통해 수동으로 파일을 가져 오는 대신 CocoaPods와 같은 의존성 관리자가 모든 것을 처리합니다.
+  자동으로 프레임 워크를 찾거나 설치하거나 종속성에 따라 전체 프로세스를 단순화합니다.
 
 2. Podfile
-Podfile은 프로젝트의 루트에 있으며 설치하려는 모든 pod를 추적하는 역할을하는 파일입니다. 기존 포드에 포드 나 업데이트를 설치하도록 코코아 포드에 요청하면, 코코아 포드는 지침을 위해 포드 파일을 찾습니다
+  Podfile은 프로젝트의 루트에 있으며 설치하려는 모든 pod를 추적하는 역할을하는 파일입니다. 
+  기존 포드에 포드 나 업데이트를 설치하도록 코코아 포드에 요청하면, 코코아 포드는 지침을 위해 포드 파일을 찾습니다.
 
-The Podfile describes the dependencies of the targets of your Xcode project. 
-Therefore, we have to specify the target, which is CocoapodsTest for this demo.
-=Podfile은 Xcode 프로젝트의 대상에 대한 종속성을 설명합니다. 따라서이 데모에서는 CocoapodsTest라는 대상을 지정해야합니다.
+  The Podfile describes the dependencies of the targets of your Xcode project. 
+  Therefore, we have to specify the target, which is CocoapodsTest for this demo.
+  = Podfile은 Xcode 프로젝트의 대상에 대한 종속성을 설명합니다. 따라서이 데모에서는 CocoapodsTest라는 대상을 지정해야합니다.
 
 3. Podfile에 pod 'Firebase'를 추가함
-이는 CocoaPods에 'Firebase' pod를 사용할 것이라고 알리는 것이다. 어떻게 pod 이름을 알까? pod에 대한 문서를 찾아보거나 단순히 cocoapods.org.에서 검색하면 된다. 
+  이는 CocoaPods에 'Firebase' pod를 사용할 것이라고 알리는 것이다. 
+  어떻게 pod 이름을 알까? pod에 대한 문서를 찾아보거나 단순히 cocoapods.org.에서 검색하면 된다. 
 
-4. 이제 터미널에 pod install을 치면 Cocoapods가 Firebase pod를 설치할 것이다. Firebase pod를 다운로드한 뒤에는 CocoapodsTest.xcworkspace라는 작업 공간 파일이 생성됩니다. 이 작업 공간 파일은 원본 Xcode 프로젝트, Firebase 라이브러리 및 그 종속성을 묶습니다. 이제부터는 CocoapodsTest.xcodeproj 대신 CocoapodsTest.xcworkspace를 사용해야합니다.
+4. 이제 터미널에 pod install을 치면 Cocoapods가 Firebase pod를 설치할 것이다. 
+  Firebase pod를 다운로드한 뒤에는 CocoapodsTest.xcworkspace라는 작업 공간 파일이 생성됩니다. 
+  이 작업 공간 파일은 원본 Xcode 프로젝트, Firebase 라이브러리 및 그 종속성을 묶습니다. 
+  이제부터는 CocoapodsTest.xcodeproj 대신 CocoapodsTest.xcworkspace를 사용해야합니다.
 
-5. 이제 Firebase pod를 사용하기만 하면 된다. Xcode에서 IDE 내부의 ViewController.swift로 이동하고 'import Firebase'를 import해주면.. Cocoapods를 사용했다!	
+5. 이제 Firebase pod를 사용하기만 하면 된다. 
+  Xcode에서 IDE 내부의 ViewController.swift로 이동하고 'import Firebase'를 import해주면.. Cocoapods를 사용했다!	
